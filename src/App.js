@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
+import Mars from './components/Mars';
 
 function App() {
-  return
+  return <Mars/>
+
 }
 export default App;
