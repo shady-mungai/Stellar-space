@@ -4,4 +4,16 @@
 
 @tailwind utilities;
 
-/* @import url('https://fonts.googleapis.com/css?family=Rubik'); */
+#fa-fa{
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+ 
+}
+#day{
+  text-align: center;
+
+}
