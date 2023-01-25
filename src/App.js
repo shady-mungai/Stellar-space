@@ -1,7 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Earth from './components/Earth';
 
 function App() {
-  return
+  return(
+  <Earth/>
+
+  )
 }
 export default App;
