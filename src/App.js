@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import MarsWeather from "./components/MarsWeather";
 import Home from "./views/Home";
 import DayPic from './components/pic';
+import Earth from './components/Earth'
 
 
 
@@ -14,9 +15,13 @@ function App() {
   return (
 <div>
   <Navbar/>
-   <DayPic/>
-  <Earth/>
   <Routes>
+    <Route path="/earth" element={<Earth/>} />
+
+
+    <Route path="/daypic" element={<DayPic/>} />
+
+
     <Route path="/" element={<Home/>} />
 
     <Route path="/Mars" element={<Mars/>} />
