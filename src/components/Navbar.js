@@ -17,6 +17,12 @@ function Navbar() {
         {/* three links -> home, analytics & profile */}
         <div className="flex text-white gap-4 text-lg">
         <div>
+            <Link to="./pic">Pic Of The Day</Link>
+          </div>
+          <div>
+            <Link to="/earth">Objects Near Earth</Link>
+          </div>
+        <div>
             <Link to="/">Home</Link>
           </div>
           <div>
