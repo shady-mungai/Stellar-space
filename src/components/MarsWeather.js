@@ -29,17 +29,16 @@ else{
 
 
   return (
-    <div>
-      <h1>Mars Weather Statistics</h1>
-      <p>AUGUST 26,2022</p>
-      <label>ATMOSPHERIC TEMPERATURE</label>
-      <p>{oneMeasure}</p>
-      <label>HORIZONTAL WIND SPEED</label>
-      <p>{oneMeasure}</p>
-      <label>PRESSURE</label>
-      <p>{oneMeasure}</p>
-      <label>WIND DIRECTION</label>
-      <p>{oneMeasure}</p>
+    <div className='bg-black'>
+      <h1 className='text-white bold text-3xl'>Mars Weather Statistics</h1>
+      <label className='text-white bold text-2xl'>ATMOSPHERIC TEMPERATURE</label>
+      <p className='text-white text-xl'>{oneMeasure}</p>
+      <label className='text-white bold text-2xl'>HORIZONTAL WIND SPEED</label>
+      <p className='text-white text-xl'>{oneMeasure}</p>
+      <label className='text-white bold text-2xl'>PRESSURE</label>
+      <p className='text-white text-xl'>{oneMeasure}</p>
+      <label className='text-white bold text-2xl'>WIND DIRECTION</label>
+      <p className='text-white text-xl'>{oneMeasure}</p>
 
     </div>
   )
