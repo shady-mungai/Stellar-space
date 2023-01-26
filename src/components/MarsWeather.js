@@ -1,11 +1,9 @@
 import React from 'react'
 
 function MarsWeather({  }) {
-  return (
-    <div>
-      
-    </div>
-  )
+  return 
+
+  
 }
 
 export default MarsWeather

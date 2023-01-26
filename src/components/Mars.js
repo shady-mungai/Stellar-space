@@ -17,7 +17,6 @@ function Mars() {
                       });
   }, []);
    
-  console.log(roverPhotos[0])
 
   const eachImage = roverPhotos.map((roverPhoto, index) => {
     return (
