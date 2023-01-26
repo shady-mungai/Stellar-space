@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Mars from "./components/Mars";
@@ -10,6 +11,7 @@ function App() {
   return (
 <div>
   <Navbar/>
+  <Earth/>
   <Routes>
     <Route path="/" element={<Home/>} />
 
@@ -20,5 +22,6 @@ function App() {
   </Routes>
 </div>
   );
+
 }
 export default App;
