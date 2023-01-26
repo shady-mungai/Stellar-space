@@ -5,19 +5,19 @@ function Footer(){
 <footer className="footer-distributed">
     <div className="footer-right">
         <span>
-        <a href="https://github.com/Nick679-bee" target="_blank"><i className="fa fa-github"></i></a>
+        <a href="https://github.com/Nick679-bee" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
         <h6>Nicholas</h6>
         </span>
         <span>
-        <a href="https://github.com/shady-mungai" target="_blank" ><i className="fa fa-github"></i></a>
+        <a href="https://github.com/shady-mungai" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
         <h6>Shadrack Mungai</h6>
         </span>
     </div>
     <div className="footer-right" id="rightIcons">
-        <span> <a href="https://github.com/maqiie" target="_blank"><i className="fa fa-github"></i></a>
+        <span> <a href="https://github.com/maqiie" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
         <h6>Mark Paul</h6>
         </span>
-   <span> <a href="https://github.com/JoseMwanzia" target="_blank"><i className="fa fa-github"></i></a>
+   <span> <a href="https://github.com/JoseMwanzia" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
    <h6>Joseph Mwanzia</h6>
    </span>
    
