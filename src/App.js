@@ -6,6 +6,7 @@ import Mars from "./components/Mars";
 import Navbar from "./components/Navbar";
 import MarsWeather from "./components/MarsWeather";
 import Home from "./views/Home";
+import Footer from "./views/Footer";
 import DayPic from './components/DayPic';
 import Earth from './components/Earth'
 
@@ -29,6 +30,7 @@ function App() {
     <Route path="/MarsWeather" element={<MarsWeather/>} />
 
   </Routes>
+  <Footer/>
 </div>
   );
 

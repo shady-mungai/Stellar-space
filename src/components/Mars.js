@@ -30,7 +30,7 @@ function Mars() {
   return (
     <div className="bg-gray-300 ">
       {roverPhotos ? (
-        <div className="bg-gray-300 grid grid-cols-4">
+        <div className="bg-gray-300 grid grid-cols-4 overflow-scroll">
           {eachImage}
           </div>
       ) : (
