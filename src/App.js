@@ -6,7 +6,7 @@ import Mars from "./components/Mars";
 import Navbar from "./components/Navbar";
 import MarsWeather from "./components/MarsWeather";
 import Home from "./views/Home";
-import DayPic from './components/pic';
+import DayPic from './components/DayPic';
 import Earth from './components/Earth'
 
 
