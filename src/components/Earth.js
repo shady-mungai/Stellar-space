@@ -4,11 +4,14 @@ import ObjectsNearEarth from "./ObjectsNearEarth";
 
 function Earth() {
   const [data, setData] = useState([{}]);
+  
+  const api_key = process.env.REACT_APP_API_KEY;
+
 
   useEffect(() => {
     axios
       .get(
-        "https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=YT2v2f6KZQXdSMtzPMrdu27ojErRY7iIsKHjn1KK"
+        `https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=${api_key}`
       )
       .then((response) => {
         setData(response.data.near_earth_objects);
@@ -26,17 +29,16 @@ function Earth() {
 
   const eachObject = data.map((object, index) => {
     return (
-      <div key={index}>
-        {" "}
-        <ObjectsNearEarth object={object} />{" "}
-      </div>
+
+        <ObjectsNearEarth key={index}object={object} />
+      
     );
    
       
 
   });
 
-  return eachObject;
+  return <div className="grid grid-cols-3">{eachObject}</div>;
 }
 
  
