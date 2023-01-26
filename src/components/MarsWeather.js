@@ -14,19 +14,33 @@ function MarsWeather() {
       .then((res) => {
         setMarsData(res.data.validity_checks["1219"]);
       });
-  }, []);
-  // console.log(marsData)
+  }, [api_key]);
+   //console.log(marsData)
   const { AT } = marsData;
 if (AT) {
   const { sol_hours_with_data } = AT;
-  console.log(sol_hours_with_data);
+  var eachData = sol_hours_with_data.map((data)=>{return data})
+  var oneMeasure = eachData.map((value)=>{return (
+    <div>{value}</div>)})
 }
+else{
+
+}
+
 
   return (
     <div>
       <h1>Mars Weather Statistics</h1>
       <p>AUGUST 26,2022</p>
-      <p></p>
+      <label>ATMOSPHERIC TEMPERATURE</label>
+      <p>{oneMeasure}</p>
+      <label>HORIZONTAL WIND SPEED</label>
+      <p>{oneMeasure}</p>
+      <label>PRESSURE</label>
+      <p>{oneMeasure}</p>
+      <label>WIND DIRECTION</label>
+      <p>{oneMeasure}</p>
+
     </div>
   )
 
