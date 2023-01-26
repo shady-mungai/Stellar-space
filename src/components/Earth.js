@@ -20,7 +20,7 @@ function Earth() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [api_key]);
   console.log(data[0]);
   //  console.log(data[0].close_approach_data)
   //  console.log(data)
@@ -38,7 +38,7 @@ function Earth() {
 
   });
 
-  return <div className="grid grid-cols-3">{eachObject}</div>;
+  return <div className="bg-gray-500 grid grid-cols-3">{eachObject}</div>;
 }
 
  
