@@ -27,26 +27,6 @@ function Mars() {
   
     );
   });
-  
-
-
-  //state that contains initial Mars weather data
-  const [marsTemp, setMarsTemp] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(
-        `https://api.nasa.gov/insight_weather/?api_key=${api_key}&feedtype=json&ver=1.0`
-      )
-      .then((res) => {
-        setMarsTemp(res.data.validity_checks["1219"].AT.sol_hours_with_data);
-      });
-  }, []);
-
-  
-console.log(marsTemp)
-
-
   return (
     <div className="bg-gray-300 ">
       {roverPhotos ? (
