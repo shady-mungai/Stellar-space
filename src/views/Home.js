@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-function Home() {
-  return (
+const Home = () => {
 
-<div className='content-around max-w-5xl p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700' >
-    </div>
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const handleClick = () => {
+      setIsOpen(!isOpen);
+    };
+        return (
+          <div className='relative h-[480px]'>
+            <div className='absolute z-20 flex h-full flex-col items-start justify-center space-y-4 ml-12 tex-white font-bold w-[800px]'>
+              <h2 className='text-6xl'>Welcome to Stellar Space</h2>
+              <p>Know what surrounds you.</p>
+             <div id='day'>
+             <div  className='bg-pink-500 px-[12px] py-[9px] text-[15px] font-bold text-white rounded-md hover:bg-pink-400'>
+              <a href="#pic"  onClick={handleClick}><i ></i> picture of the day </a>
+             </div> 
+             </div>
+            </div>
+            <div className='bg-black absolute opacity-70 w-full h-full'>
 
-  )
-}
-
-export default Home
+            </div>
+          </div>
+    
+        )
+      }
+    
+    export default Home
