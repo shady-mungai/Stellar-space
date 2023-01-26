@@ -1,34 +1,35 @@
-import React, { useState } from 'react';
-import "../index.css";
 
-const Navbar = () => {
 
-  const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
+import React from "react";
+import { Link } from "react-router-dom";
 
+function Navbar() {
   return (
-    <nav id="navbar">
-    <div >
-      <div  id="myNavbar">
-      <h2 className='font-bold text-xl'> Stellar Space</h2>
-        <div  id="fa-fa">
-        <div className="w3-left w3-hide-small">
-          <a href="#Home"  onClick={handleClick}><i className="fa fa-user"></i> Home </a>
-          <a href="#"  onClick={handleClick}><i className="fa fa-user"></i> Earth</a>
-          <a href="#" onClick={handleClick}><i className="fa fa-th"></i> Mars </a>
-          <a href="#" onClick={handleClick}><i className="fa fa-th"></i> Space </a>
+    <div className="bg-gray-700 text-white">
+      <div className="flex justify-between items-center w-full h-19 container  mx-auto">
+        {/* logo */}
+        <div>
+          <h2 className="text-2xl font-bold">
+            <span>Stellar Space</span>
+          </h2>
         </div>
-     </div>
-
+        {/* three links -> home, analytics & profile */}
+        <div className="flex text-white gap-4 text-lg">
+        <div>
+            <Link to="/">Home</Link>
+          </div>
+          <div>
+            <Link to="./Mars">Mars</Link>
+          </div>
+          <div>
+            <Link to="./MarsWeather">Mars Weather</Link>
+          </div>
+        </div>
       </div>
     </div>
-    </nav>
-
   );
 }
 
+export default Navbar;
 
-export default Navbar
