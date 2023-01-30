@@ -29,6 +29,9 @@ function Navbar() {
           <div>
             <Link to="./MarsWeather">Mars Weather</Link>
           </div>
+          <div>
+            <Link to="./AsteroidsMap">Asteroids</Link>
+          </div>
         </div>
       </div>
     </div>

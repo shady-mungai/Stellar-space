@@ -9,6 +9,7 @@ import Home from "./views/Home";
 import Footer from "./views/Footer";
 import DayPic from './components/DayPic';
 import Earth from './components/Earth'
+import AsteroidsMap from "./components/AsteroidsMap";
 
 
 
@@ -24,6 +25,9 @@ function App() {
 
 
     <Route path="/" element={<Home/>} />
+
+    <Route path="/AsteroidsMap" element={<AsteroidsMap/>} />
+
 
     <Route path="/Mars" element={<Mars/>} />
     
